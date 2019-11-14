@@ -1,4 +1,4 @@
-package com.regis.relatoriocampanhas.util;
+package com.muffato.relatoriomari.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

@@ -1,4 +1,4 @@
-package com.regis.relatoriocampanhas.util;
+package com.muffato.relatoriomari.util;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -26,7 +26,7 @@ public class SendEmail {
 		mailSession.setDebug(false);
 		try {
 			msg.setSubject(assunto);
-			InternetAddress from = new InternetAddress("desenvolvimento@muffato.com.br", "Desenvolvimento");
+			InternetAddress from = new InternetAddress("coordena.software@muffato.com.br", "Desenvolvimento");
 			msg.setFrom(from);
 			InternetAddress[] address = null;
 

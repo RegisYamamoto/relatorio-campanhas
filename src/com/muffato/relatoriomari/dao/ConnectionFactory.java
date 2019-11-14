@@ -1,4 +1,4 @@
-package com.regis.relatoriocampanhas.dao;
+package com.muffato.relatoriomari.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,8 +9,10 @@ public class ConnectionFactory {
 	public Connection getConnection() throws ClassNotFoundException {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
+			//producao
 			return DriverManager.getConnection(
-					"jdbc:mysql://localhost/clubefato?useTimezone=true&serverTimezone=UTC&createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true", "root", "1234");
+					"jdbc:mysql://10.251.22.11:3306/clubefato",
+					"clubefato","devmaster");
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
